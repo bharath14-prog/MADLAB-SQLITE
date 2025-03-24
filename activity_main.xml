@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp">
+
+    <!-- EditText for Name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="48dp" />
+
+    <!-- EditText for Age -->
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="48dp" />
+
+    <!-- EditText for ID (used for Update/Delete) -->
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID for Update/Delete"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:text="Add User"
+        android:onClick="addUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:text="View Users"
+        android:onClick="viewUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:text="Update User"
+        android:onClick="updateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:text="Delete User"
+        android:onClick="deleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" />
+</LinearLayout>
